@@ -699,6 +699,7 @@ section.cart.section .container {
 section.cart.section .row {
     display: flex;
     justify-content: space-between;
+    height: inherit;
 }
 
 section.cart.section .row .items {
@@ -708,9 +709,14 @@ section.cart.section .row .items {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    height: inherit;
 }
 
-section.cart.section .row .items p {
+section.cart .row .items p {
+    text-align: center;
+    align-items: center;
+    /* margin: auto; */
+    display: block;
     color: #808080;
 }
 
