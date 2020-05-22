@@ -18,6 +18,7 @@ html {
 }
 
 body {
+    /* overflow: hidden; */
     margin: 0;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;
@@ -92,7 +93,7 @@ ul {
     content: '';
     width: 68px;
     height: 2px;
-    background: #b2dd4c;
+    background: #0073b1;
     position: absolute;
     left: -34px;
     animation: bluebar 1.5s infinite ease;

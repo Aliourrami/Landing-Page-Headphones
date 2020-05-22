@@ -4,9 +4,10 @@
 window.addEventListener("load", function () {
 
     setTimeout(function () {
-        document.querySelector(".loading-screen").style.display = "none";
+        document.querySelector(".loading-screen").style.display = "none"
     }, 1500)
-    document.querySelector(".loading-animation").classList.add("opacity-0");
+    document.querySelector(".loading-animation").classList.add("opacity-0")
+
 
 })
 
