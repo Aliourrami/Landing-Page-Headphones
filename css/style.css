@@ -93,7 +93,7 @@ ul {
     content: '';
     width: 68px;
     height: 2px;
-    background: #0073b1;
+    background: #b2dd4c;
     position: absolute;
     left: -34px;
     animation: bluebar 1.5s infinite ease;
