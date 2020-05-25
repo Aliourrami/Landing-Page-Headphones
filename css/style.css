@@ -1290,6 +1290,13 @@ footer .row .items p {
     }
 }
 
+@media (min-height: 300px) {
+    nav ul {
+        position: sticky;
+        top: 0;
+    }
+}
+
 @media (max-width: 294px) {
     .info-product {
         display: block;
