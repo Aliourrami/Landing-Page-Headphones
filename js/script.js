@@ -99,3 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 }, false);
+
+// Annimation on scroll
+AOS.init({
+    duration: 1200,
+})
