@@ -83,8 +83,7 @@ window.addEventListener("scroll", event => {
         let section = document.querySelector(link.hash);
 
         if (
-            section.offsetTop <= fromTop &&
-            section.offsetTop + section.offsetHeight > fromTop
+            section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop
         ) {
             link.classList.add("current");
         } else {
