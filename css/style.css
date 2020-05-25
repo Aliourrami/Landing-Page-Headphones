@@ -1338,3 +1338,28 @@ footer .row .items p {
         display: contents;
     }
 }
+
+/***********ANIMATIONS************/
+
+/* header .items .item {
+    opacity: 0;
+    animation: featuresanimation 1.5s ease;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes featuresanimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+} */
