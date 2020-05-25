@@ -47,48 +47,22 @@ function asideSectionToggleBtn() {
     }
 }
 
-// fix problem nav background bar hidden
+
+// When the user scrolls down 80px from the top of the document, 
+//resize the navbar's show background (class nav-scrolled)
+
 const header = document.querySelector("header .container");
-const sectionOne = document.querySelector(".home");
 
-
-function myFunctionMargin(margin) {
-    const sectionOneObserver = new IntersectionObserver(function (
-            entries,
-            sectionOneObserver
-        ) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    header.classList.add("nav-scrolled");
-                } else {
-                    header.classList.remove("nav-scrolled");
-                }
-            });
-        },
-        margin);
-    sectionOneObserver.observe(sectionOne);
-}
-const sectionOneOptions = {
-    rootMargin: "-4000px 0px 0px 0px"
-};
-const sectionOneOptions2 = {
-    rootMargin: "-400px 0px 0px 0px"
+window.onscroll = function () {
+    scrollFunction();
 };
 
-function myFunction(x) {
-    if (x.matches) { // If media query matches
-        myFunctionMargin(sectionOneOptions);
-        // header.classList.add("nav-scrolled");
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        //document.getElementById("navbar").style.padding = "30px 10px";
+        header.classList.add("nav-scrolled");
     } else {
-
-        myFunctionMargin(sectionOneOptions2);
+        //document.getElementById("navbar").style.padding = "80px 10px";
+        header.classList.remove("nav-scrolled");
     }
 }
-
-var x1 = window.matchMedia("(max-width: 1024px)")
-myFunction(x1) // Call listener function at run time
-x1.addListener(myFunction) // Attach listener function on state changes
-
-var x2 = window.matchMedia("(max-width: 2560px)")
-myFunction(x2) // Call listener function at run time
-x2.addListener(myFunction) // Attach listener function on state changes

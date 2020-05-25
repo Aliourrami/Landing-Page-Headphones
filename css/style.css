@@ -886,6 +886,7 @@ footer .row .items p {
 @media (max-width: 1340px) {
 
 
+
     .items-features .row .item {
         margin-top: 25px;
     }
@@ -927,6 +928,12 @@ footer .row .items p {
 @media (max-width: 1024px) {
 
 
+    .nav-scrolled-media {
+        background-color: #f5f5f5;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+    }
 
     .nav-toggler.open {
         left: 180px;
