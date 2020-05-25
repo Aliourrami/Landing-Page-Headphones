@@ -67,34 +67,35 @@ function scrollFunction() {
     }
 }
 
-//
+// Scrollspy
 
-let mainNavLinks = document.querySelectorAll("ul li a");
-let mainSections = document.querySelectorAll(".content-main section");
+document.addEventListener('DOMContentLoaded', function () {
 
+    // grab the sections (targets) and menu_links (triggers)
+    // for menu items to apply active link styles to
+    const sections = document.querySelectorAll(".content-main section");
+    const menu_links = document.querySelectorAll(".item ul li a");
 
-let lastId;
-let cur = [];
+    // functions to add and remove the active class from links as appropriate
+    const makeActive = (link) => menu_links[link].classList.add("active");
+    const removeActive = (link) => menu_links[link].classList.remove("active");
+    const removeAllActive = () => [...Array(sections.length).keys()].forEach((link) => removeActive(link));
 
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
+    const sectionMargin = 200;
 
-window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
+    let currentActive = 0;
 
-    mainNavLinks.forEach(link => {
-        let section = document.querySelector(link.hash);
+    // listen for scroll events
+    window.addEventListener("scroll", () => {
+        const current = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - sectionMargin) - 1
 
-        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
+        // only if the section has changed
+        // remove active class from all menu links
+        // and then apply it to the link for the current section
+        if (current !== currentActive) {
+            removeAllActive();
+            currentActive = current;
+            makeActive(current);
         }
     });
-});
+}, false);
