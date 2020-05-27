@@ -299,6 +299,8 @@ header .items .item a .icon.icofont-shopping-cart .count-item {
     color: #ffffff;
 }
 
+
+
 /* ---------  Section SHop --------- */
 .section {
     height: 115vh;
@@ -335,7 +337,7 @@ header .items .item a .icon.icofont-shopping-cart .count-item {
 }
 
 .items-features .row .item:hover {
-    box-shadow: 0 0 20px 4px #d3d3d357;
+    box-shadow: 0 0 20px 4px #d3d3d3bf;
 }
 
 
@@ -738,8 +740,8 @@ section.cart.section .row .items button {
 }
 
 section.cart.section .row .items button:hover {
-    background-color: #ffffff;
-    border: 1.5px solid #d3d3d3;
+    background-color: transparent;
+    border: 1.5px solid rgb(178, 221, 76);
     color: #6d6d6d;
     cursor: pointer;
 }
@@ -1188,10 +1190,6 @@ footer .row .items p {
         flex: 0 0 90%;
         max-width: 90%;
         /* top: 30%; */
-    }
-
-    header {
-        /* visibility: hidden !important; */
     }
 
     .home {
