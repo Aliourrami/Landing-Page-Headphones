@@ -687,6 +687,13 @@ section.product {
     cursor: pointer;
     background-color: #b2dd4c;
     color: #ffffff;
+    border: 2px solid #b2dd4c;
+}
+
+
+.product .items-products .item .btn-product a:last-child:hover {
+    border: 2px solid #b2dd4c;
+    border-left: 2px solid #d3d3d3;
 }
 
 /* --------- Section Add cart --------- */
