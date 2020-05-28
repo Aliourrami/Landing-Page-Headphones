@@ -278,7 +278,7 @@ header .items .item a .icon.icofont-shopping-cart .count-item {
 }
 
 .home .items .btn-Home button#btn-check:hover {
-    background-color: #ffffff;
+    background-color: transparent;
     border: 1.5px solid #d3d3d3;
     color: #6d6d6d;
     cursor: pointer;
@@ -433,6 +433,7 @@ header .items .item a .icon.icofont-shopping-cart .count-item {
 
 .items-features .row .item button:hover {
     color: white;
+    border: 2px solid #b2dd4c;
 }
 
 .buttonfx:hover:after {
