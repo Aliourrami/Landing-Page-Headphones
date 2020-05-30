@@ -25,6 +25,13 @@ body {
     font-weight: 400;
 }
 
+section .container {
+    width: 100%;
+    height: 100%;
+    /* margin: auto; */
+    padding: 0 85px;
+}
+
 h1,
 h2,
 h3,
@@ -52,6 +59,7 @@ p {
 ul {
     list-style: none;
 }
+
 
 /* -------Preloader-------- */
 
@@ -109,7 +117,7 @@ ul {
 
 /* header */
 /* <!-- Navbar --> */
-section .container {
+header .container {
     width: 100%;
     height: 100%;
     /* margin: auto; */
@@ -133,7 +141,7 @@ header .items {
     max-width: 100%;
 }
 
-header .items .item {
+header .items nav {
     width: 100%;
     line-height: 70px;
 
@@ -162,7 +170,7 @@ header .container {
     -webkit-transition: all 0.5s ease;
 }
 
-header .items .item a {
+header .items nav a {
     color: #808080;
     text-transform: capitalize;
     font-weight: bold;
@@ -174,13 +182,13 @@ header .items .item a {
     -webkit-transition: all 0.3s;
 }
 
-header .items .item a.active {
+header .items nav a.active {
     color: #ffffff;
     background-color: rgb(178, 221, 76);
     border-radius: 3px;
 }
 
-header .items .item a:Hover {
+header .items nav a:Hover {
     color: #ffffff;
     background-color: rgb(178, 221, 76);
     padding: 0px 20px;
@@ -188,7 +196,7 @@ header .items .item a:Hover {
     outline: none;
 }
 
-header .items .item a.icon:hover {
+header .items nav a.icon:hover {
     color: #808080;
     background-color: transparent;
     transform: scale(1.2);
@@ -197,12 +205,12 @@ header .items .item a.icon:hover {
     -webkit-transition: all 0.3s;
 }
 
-header .items .item a .icon.icofont-shopping-cart {
+header .items nav a .icon.icofont-shopping-cart {
     font-size: 20px;
     position: relative;
 }
 
-header .items .item a .icon.icofont-shopping-cart .count-item {
+header .items nav a .icon.icofont-shopping-cart .count-item {
     height: 20px;
     position: absolute;
     width: 20px;
@@ -789,7 +797,7 @@ footer .row .items p {
     top: 30px;
     z-index: 13;
     border-radius: 10px 10px 10px 10px;
-    background-color: #fdf9ff;
+    background-color: #f9f9f9;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -974,7 +982,7 @@ footer .row .items p {
         position: relative;
     }
 
-    header .items .item {
+    header .items nav {
         /* width: 100%; */
         line-height: 51px;
         display: block;
@@ -1077,10 +1085,10 @@ footer .row .items p {
         width: 240px;
     }
 
-    section.app.diagonal,
+    /* section.app.diagonal,
     .shop.section {
         height: 100%;
-    }
+    } */
 
     section .container {
         /* width: 100%; */

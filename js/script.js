@@ -7,12 +7,10 @@ window.addEventListener("load", function () {
         document.querySelector(".loading-screen").style.display = "none"
     }, 1000)
     document.querySelector(".loading-animation").classList.add("opacity-0")
-
-
 })
 
 // style active class on link navbar
-const link = document.querySelectorAll('.item ul a')
+const link = document.querySelectorAll('nav ul a')
 
 for (let i = 0; i < link.length; i++) {
     link[i].addEventListener("click", function () {
@@ -23,8 +21,6 @@ for (let i = 0; i < link.length; i++) {
         }
         link[i].classList.add("active");
     })
-
-
 }
 
 // End style active class on link navbar
@@ -73,8 +69,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // grab the sections (targets) and menu_links (triggers)
     // for menu items to apply active link styles to
-    const sections = document.querySelectorAll(".content-main section");
-    const menu_links = document.querySelectorAll(".item ul li a");
+    const sections = document.querySelectorAll("main section");
+    const menu_links = document.querySelectorAll("nav ul li a");
 
     // functions to add and remove the active class from links as appropriate
     const makeActive = (link) => menu_links[link].classList.add("active");
